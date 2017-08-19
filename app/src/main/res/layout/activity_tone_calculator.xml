@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/standardMargin"
+    tools:context="juliorodrigues.musictheoryhelper.ui.ToneCalculatorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/cornerRadius"
+            style="@style/noteCardStyle">
+            <TextView
+                android:id="@+id/cButton"
+                android:text="C"
+                style="@style/noteButtonStyle"/>
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/cornerRadius"
+            style="@style/noteCardStyle">
+            <TextView
+                android:id="@+id/dButton"
+                android:text="D"
+                style="@style/noteButtonStyle"/>
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/cornerRadius"
+            style="@style/noteCardStyle">
+            <TextView
+                android:id="@+id/eButton"
+                android:text="E"
+                style="@style/noteButtonStyle"/>
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/cornerRadius"
+            style="@style/noteCardStyle">
+            <TextView
+                android:id="@+id/fButton"
+                android:text="F"
+                style="@style/noteButtonStyle"/>
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/cornerRadius"
+            style="@style/noteCardStyle">
+            <TextView
+                android:id="@+id/gButton"
+                android:text="G"
+                style="@style/noteButtonStyle"/>
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/cornerRadius"
+            style="@style/noteCardStyle">
+            <TextView
+                android:id="@+id/aButton"
+                android:text="A"
+                style="@style/noteButtonStyle"/>
+        </android.support.v7.widget.CardView>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/cornerRadius"
+            style="@style/noteCardStyle">
+            <TextView
+                android:id="@+id/bButton"
+                android:text="B"
+                style="@style/noteButtonStyle"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/doubleMargin"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/cornerRadius"
+            android:layout_marginRight="@dimen/standardHorizontalMargin"
+            style="@style/noteCardStyle">
+            <TextView
+                android:id="@+id/addButton"
+                android:text="+"
+                style="@style/noteButtonStyle"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/cornerRadius"
+            style="@style/noteCardStyle">
+            <TextView
+                android:id="@+id/subButton"
+                android:text="-"
+                style="@style/noteButtonStyle"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/doubleMargin"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/quantityView"
+            android:text="0"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/standardHorizontalMargin"
+            android:inputType="numberDecimal"/>
+
+        <android.support.v7.widget.CardView
+            style="@style/noteCardStyle"
+            android:layout_marginRight="@dimen/standardHorizontalMargin"
+            app:cardCornerRadius="@dimen/cornerRadius">
+
+            <TextView
+                android:id="@+id/toneButton"
+                style="@style/noteButtonStyle"
+                android:text="T"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/noteCardStyle"
+            android:layout_marginRight="@dimen/standardHorizontalMargin"
+            app:cardCornerRadius="@dimen/cornerRadius">
+
+            <TextView
+                android:id="@+id/semiToneButton"
+                style="@style/noteButtonStyle"
+                android:layout_width="wrap_content"
+                android:text="ST"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/doubleMargin"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_marginTop="@dimen/standardVerticalMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/giantFont"
+        tools:text="C#"/>
+
+</LinearLayout>

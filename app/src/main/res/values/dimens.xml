@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standardHorizontalMargin">13dp</dimen>
+    <dimen name="standardVerticalMargin">10dp</dimen>
+    <dimen name="standardMargin">16dp</dimen>
+    <dimen name="doubleMargin">32dp</dimen>
+
+    <dimen name="averageFont">16sp</dimen>
+    <dimen name="bigFont">24sp</dimen>
+    <dimen name="giantFont">36sp</dimen>
+
+    <dimen name="cornerRadius">4dp</dimen>
+</resources>
