@@ -17,6 +17,7 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        setTitle(R.string.app_name);
 
         menuGridView = (GridView) findViewById(R.id.menuGridView);
         menuGridView.setAdapter(new GridMenuAdapter(this));

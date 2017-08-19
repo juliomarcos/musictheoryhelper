@@ -51,6 +51,7 @@ public class ToneCalculatorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tone_calculator);
+        setTitle(R.string.tone_calculator);
 
         // View Binding
 
